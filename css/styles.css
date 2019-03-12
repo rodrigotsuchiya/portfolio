@@ -139,6 +139,14 @@ body {
 	line-height: 24px;
 	text-align: justify;
 }
+.main a{
+	color: white;
+	text-decoration: none;
+}
+.main a:hover{
+	color: #302B37;
+	text-decoration: none;
+}
 
 .cv-pic {
 	float: left;

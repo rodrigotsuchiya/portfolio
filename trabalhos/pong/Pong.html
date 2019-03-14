@@ -12,6 +12,7 @@
       function iniciar(){
         folhaDesenho = document.getElementById("folha");
         areaDesenho = folhaDesenho.getContext("2d");
+        jogadorNome = prompt("digite o seu nome: ")
 
         larguraCampo = 600;
         alturaCampo = 500;
@@ -56,7 +57,7 @@
         areaDesenho.fillRect(larguraCampo - espessuraRaquete, posicaoJogador2, espessuraRaquete, alturaRaquete);
 
         // Escrever a pontuação dos jogadores
-        areaDesenho.fillText("Humano - " + pontuacaoJogador1 + " pontos", 100, 100);
+        areaDesenho.fillText(jogadorNome + " - " + pontuacaoJogador1 + " pontos", 100, 100);
         areaDesenho.fillText("Computador - " + pontuacaoJogador2 + " pontos", larguraCampo - 200, 100);
       }
 
